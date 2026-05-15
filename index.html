@@ -37,15 +37,10 @@ body {
 
 /* Navbar */
 nav {
-    position: sticky;
-    top: 0;
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(10px);
-    padding: 10px 0;
-    padding-left: 0;
     display: flex;
     justify-content: space-between;
-    z-index: 100;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 nav a {
@@ -199,9 +194,12 @@ footer i {
 </head>
 
 <body>
-<img src="logo.jpg.jpeg" width="150"><!-- Navbar -->
 <nav>
-    <h2>EcoFuzion</h2>
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="logo.jpg.jpeg" width="120" style="display: block;">
+        <h2>EcoFuzion</h2>
+    </div>
+
     <div>
         <a href="#about">About</a>
         <a href="#features">Features</a>
@@ -209,7 +207,6 @@ footer i {
         <span class="toggle" onclick="toggleMode()">🌙</span>
     </div>
 </nav>
-
 <!-- Hero -->
 <div class="hero">
     <div>
